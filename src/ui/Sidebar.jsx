@@ -2,7 +2,8 @@ import React from "react";
 import { styled } from "styled-components";
 import Logo from "./Logo";
 import MainNav from "./MainNav";
-import Uploader from "../data/Uploader"
+import { NavLink } from "react-router-dom";
+// import Uploader from "../data/Uploader"
 
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
@@ -15,9 +16,12 @@ const StyledSidebar = styled.aside`
 `;
 
 export default function Sidebar() {
+
+
   return (
     <StyledSidebar>
-      <Logo />
+    <NavLink to="/dashboard"><Logo  /></NavLink>
+      
       <MainNav />
       {/* <Uploader/> */}
     </StyledSidebar>

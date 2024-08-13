@@ -18,7 +18,7 @@ import { useCheckout } from "../check-in-out/useCheckout";
 import Modal from "../../ui/Modal";
 import ConfirmDelete from "../../ui/ConfirmDelete";
 import { useDeleteBooking } from "./useDeleteBooking";
-import { deleteBooking } from "../../services/apiBookings";
+
 
 const Cabin = styled.div`
   font-size: 1.6rem;
